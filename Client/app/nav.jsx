@@ -1,12 +1,14 @@
 import React, { Component, PropTypes } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Image} from 'react-bootstrap';
 import { Link } from 'react-router';
 
 const NavBar = () => (
   <Navbar collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <Link to="/">Hamster</Link>
+        <Link to="/">
+          <Image bsClass="logo" src="split-level-logo.png"/>
+        </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
